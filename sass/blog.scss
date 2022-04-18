@@ -1,0 +1,329 @@
+section#banner {
+    height: 175px;
+    background-image: url('../images/about-page/Breadcrumb-resize.png');
+    margin-bottom: 3em;
+    .container {
+        text-align: center;
+        align-content: center;
+        height: auto;
+        .wrapper {
+            h1 {
+                font-size: 25px;
+                font-weight: 400;
+            }
+            transform: translateY(90%);
+            color: #fff;
+        }
+    }
+}
+
+
+
+section#main {
+    .container {
+        .row {
+            .row {
+                .wrapper {
+                    // Featured Collection
+                    .featured-collection {
+                        border: 1px solid rgba(0,0,0,.2);
+                        width: 329px;
+                        margin-bottom: 30px;
+                        h2 {
+                            font-size: 14px;
+                            font-weight: 400;
+                            letter-spacing: 1.8px;
+                            text-transform: uppercase;
+                            color: #45494D;
+                            background-color: #F4F4F5;
+                            padding-top: 1em;
+                            padding-bottom: 1em;
+                            padding-left: 1.05em;
+                            margin-top: 0;
+                        }
+
+                        .content {
+                            padding: .6em;
+                            .box-1,
+                            .box-2,
+                            .box-3 {
+                                .object-media {
+                                    display: flex;
+
+                                    .prod-title {
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        letter-spacing: 1.5px;
+                                        color: #45494D;
+                                    }
+
+                                    .prod-price {
+                                        .old-price {
+                                            text-decoration: line-through;
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                        }
+
+                                        p {
+                                            margin-bottom: .3em;
+                                        }
+
+                                        
+                                    }
+
+                                    .stars {
+                                        
+                                        i {
+                                            color: #FEC52C;
+                                        }
+
+                                        i:last-of-type {
+                                            color: #CDCCCD;
+                                        }
+                                    }
+
+                                    .media {
+                                        border: 1px solid rgba(0,0,0,.1);
+                                        margin-bottom: 1em;
+                                    }
+
+                                    
+
+                                    .object-content {
+                                        margin-left: .7em;
+                                    }
+
+                                }
+
+                                
+                            }
+
+
+                            .box-2,
+                            .box-3 {
+                                .object-media {
+                                    .stars {
+                                        i {
+                                            color: #CDCCCD;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    // End Featured Collection
+
+                    // Digital Watches
+                    .digital-watches {
+                        margin-bottom: 30px;
+                        img {
+                            width: 329px;
+                        }
+                    }
+                    // End Digital Watches
+
+
+                    // Special Collection
+                    .special-collection {
+                        border: 1px solid rgba(0,0,0,.2);
+                        width: 329px;
+                        margin-bottom: 30px;
+                        h2 {
+                            font-size: 14px;
+                            font-weight: 400;
+                            letter-spacing: 1.8px;
+                            text-transform: uppercase;
+                            color: #45494D;
+                            background-color: #F4F4F5;
+                            padding-top: 1em;
+                            padding-bottom: 1em;
+                            padding-left: 1.05em;
+                            margin-top: 0;
+                        }
+
+                        .content {
+                            padding: .6em;
+                            .box-1,
+                            .box-2,
+                            .box-3 {
+                                .object-media {
+                                    display: flex;
+
+                                    .prod-title {
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        letter-spacing: 1.5px;
+                                        color: #45494D;
+                                    }
+
+                                    .prod-price {
+                                        .old-price {
+                                            text-decoration: line-through;
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                        }
+
+                                        p {
+                                            margin-bottom: .3em;
+                                        }
+
+                                        
+                                    }
+
+                                    .stars {
+                                        
+                                        i {
+                                            color: #FEC52C;
+                                        }
+
+                                        i:last-of-type {
+                                            color: #CDCCCD;
+                                        }
+                                    }
+
+                                    .media {
+                                        border: 1px solid rgba(0,0,0,.1);
+                                        margin-bottom: 1em;
+                                    }
+
+                                    
+
+                                    .object-content {
+                                        margin-left: .7em;
+                                    }
+
+                                }
+
+                                
+                            }
+
+
+                            .box-2,
+                            .box-3 {
+                                .object-media {
+                                    .stars {
+                                        i {
+                                            color: #CDCCCD;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    // Special Collection
+
+                }
+            }
+
+            // Posts
+
+            .posts {
+                .post {
+                    margin-bottom: 2em;
+                }
+                .wrapper {
+                    .object-media {
+                        display: flex;
+                        img {
+                            width: 419px;
+                        }
+
+
+                        .object-content {
+                            padding-left: 1.8em;
+
+                            .user {
+                                color: #45494D;
+                                i {
+                                    margin-right: .4em;
+                                    color: #000;
+                                }
+                            }
+
+                            .post-title {
+                                font-size: 17px;
+                                font-weight: 500;
+                                letter-spacing: 1.1px;
+                                text-transform: uppercase;
+                                color: #232323;
+                            }
+
+
+                            div.date {
+                                display: flex;
+                                p.date {
+                                    color: #666666;
+                                    font-size: 15px;
+                                    font-weight: 400;
+                                    letter-spacing: .9px;
+                                    margin-right: .5em;
+                                    i {
+                                        margin-right: .3em;
+                                    }
+                                }
+
+                                p.comment {
+                                    color: #666666;
+                                    font-size: 15px;
+                                    font-weight: 400;
+                                    letter-spacing: .8px;
+                                }
+
+
+                                
+
+                            }
+
+                            p.description {
+                                font-size: 14px;
+                                font-weight: 400;
+                                color: #666666;
+                                line-height: 1.6;
+                            }
+
+                            .read-more {
+                                background-color: #B99C87;
+                                color: #fff;
+                                text-transform: uppercase;
+                                border-radius: 1px;
+                                font-size: 14px;
+                                font-weight: 500;
+                                padding: .6em 1.1em;
+
+                                &:hover {
+                                    background-color: #232323;
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+
+                nav {
+                    display: flex;
+                    align-items: center;
+                    padding-top: 1em;
+                    padding-bottom: 1em;
+                    justify-content: space-between;
+                    background-color: #F4F4F5;
+
+                    p,
+                    ul {
+                        margin: 0;
+                    }
+
+                    p {
+                        color: #666666;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+
+                }
+
+
+            }
+
+        }
+    }
+}

@@ -1,0 +1,104 @@
+section#banner {
+  height: 175px;
+  background-image: url("../images/about-page/Breadcrumb-resize.png");
+  margin-bottom: 5em;
+}
+
+section#banner .container {
+  text-align: center;
+  align-content: center;
+  height: auto;
+}
+
+section#banner .container .wrapper {
+  transform: translateY(90%);
+  color: #fff;
+}
+
+section#banner .container .wrapper h1 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+section#one,
+section#three {
+  margin-bottom: 5em;
+}
+
+section#one .container .row,
+section#three .container .row {
+  align-items: center;
+}
+
+section#one .container .row .wrapper h1,
+section#three .container .row .wrapper h1 {
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #45494D;
+  margin-bottom: 30px;
+}
+
+section#one .container .row .wrapper p.desc,
+section#three .container .row .wrapper p.desc {
+  font-size: 14px;
+  font-weight: 400;
+  color: #A4A4A4;
+  margin-bottom: 47px;
+}
+
+section#one .container .row .wrapper a,
+section#three .container .row .wrapper a {
+  background-color: #B99C87;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 1px;
+  padding: .6em 1.2em;
+}
+
+section#two {
+  margin-bottom: 5em;
+}
+
+section#two .first-row {
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+
+section#two .first-row h1 {
+  text-transform: uppercase;
+  color: #45494D;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 28px;
+}
+
+section#two .first-row p.description {
+  font-size: 14px;
+  font-weight: 400;
+  color: #A4A4A4;
+}
+
+section#two .second-row {
+  text-align: center;
+}
+
+section#two .second-row i {
+  font-size: 65px;
+  margin-bottom: 20px;
+  color: #666465;
+}
+
+section#two .second-row p.title {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 500;
+  color: #45494D;
+  margin-bottom: 9px;
+}
+
+section#two .second-row p.text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #A4A4A4;
+}

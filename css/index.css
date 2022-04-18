@@ -1,0 +1,3596 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+}
+
+.container {
+  max-width: 1448px;
+}
+
+.topbar {
+  background-color: #232222;
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.topbar .container {
+  display: flex;
+}
+
+.topbar .container .tag {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.topbar .container .tag i {
+  margin-right: .8em;
+}
+
+.topbar .container .info {
+  display: flex;
+  margin-left: auto;
+  align-items: baseline;
+  font-size: 14px;
+}
+
+.topbar .container .info i {
+  margin-right: .3em;
+}
+
+.topbar .container .info span.gmail {
+  margin-right: 13px;
+}
+
+.topbar .container .info span.checkout {
+  margin-left: 13px;
+  margin-right: 13px;
+}
+
+.topbar .container .info span.wishlist {
+  margin-left: 13px;
+}
+
+nav .container ul.navbar-nav {
+  margin-left: auto;
+}
+
+nav .container ul.navbar-nav li.nav-item {
+  padding-right: 30px;
+}
+
+nav .container ul.navbar-nav li.nav-item a.nav-link {
+  text-transform: uppercase;
+  color: #232323;
+  font-size: 14px;
+}
+
+nav .container .nav-icons i {
+  margin-right: 14px;
+}
+
+nav .container .nav-icons i.fa-shopping-cart {
+  position: relative;
+}
+
+nav .container .nav-icons i.fa-shopping-cart::after {
+  content: "0";
+  position: absolute;
+  padding-top: .1em;
+  top: -10px;
+  right: -10px;
+  text-align: center;
+  width: 15px;
+  height: 15px;
+  display: block;
+  background-color: #B99C87;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 50%;
+}
+
+section#background {
+  background-color: #F9F7F3;
+}
+
+.slick-slider:hover .slick-arrow {
+  opacity: 1 !important;
+  transition: all .4s ease-in !important;
+}
+
+.slick-slider:hover .prev,
+.slick-slider:hover .next {
+  opacity: 1 !important;
+  transition: all .4s ease-in !important;
+}
+
+.carousel-wrapper .hero {
+  background-image: url("../images/S1_2048x.png");
+  width: 1920px;
+  height: 700px;
+}
+
+.carousel-wrapper .hero .container .content {
+  color: #fff;
+  position: relative;
+  top: 50%;
+  transform: translateY(50%);
+}
+
+.carousel-wrapper .hero .container .content .big-sale {
+  color: #FBDCCA;
+  font-size: 34px;
+  margin-bottom: 0;
+}
+
+.carousel-wrapper .hero .container .content .club-watches {
+  font-family: "Playfair Display";
+  font-size: 80px;
+  font-style: italic;
+}
+
+.carousel-wrapper .hero .container .content .description {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.carousel-wrapper .hero .container .content .shop-now {
+  background-color: #B99C87;
+  text-transform: uppercase;
+  color: #fff;
+  width: 119px;
+  height: 43px;
+  border-radius: 0;
+  font-size: 14px;
+}
+
+.carousel-wrapper .hero .container .content .shop-now:hover {
+  background-color: #232323;
+}
+
+.carousel-wrapper .overlay-2 {
+  background-image: url("../images/S2_2048x.png");
+  width: 1920px;
+  height: 700px;
+}
+
+.carousel-wrapper .overlay-2 .container .content {
+  color: #fff;
+  position: relative;
+  top: 50%;
+  left: 55%;
+  transform: translateY(50%);
+}
+
+.carousel-wrapper .overlay-2 .container .content .new-arrivals {
+  color: #FBDCCA;
+  font-size: 34px;
+  margin-bottom: 0;
+}
+
+.carousel-wrapper .overlay-2 .container .content .high-watches {
+  font-family: "Playfair Display";
+  font-size: 80px;
+  font-style: italic;
+}
+
+.carousel-wrapper .buttons {
+  position: relative;
+  display: flex;
+}
+
+.carousel-wrapper .prev {
+  background-color: #B99C87;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  color: #fff;
+  z-index: 2;
+  position: absolute;
+  left: 2%;
+  top: 40%;
+  opacity: 0 !important;
+  transition: all .4s ease-in !important;
+}
+
+.carousel-wrapper .prev i {
+  position: absolute;
+  right: 38%;
+  top: 18%;
+  font-size: 34px;
+}
+
+.carousel-wrapper .next {
+  background-color: #B99C87;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  color: #fff;
+  position: relative;
+  right: 2%;
+  z-index: 2;
+  position: absolute;
+  top: 40%;
+  opacity: 0 !important;
+  transition: all .4s ease-in !important;
+}
+
+.carousel-wrapper .next i {
+  position: absolute;
+  right: 30%;
+  top: 16%;
+  font-size: 34px;
+}
+
+/****************** OVERLAY BOXES ******************/
+section#overlay-banner-boxes .container .row {
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 5px 1px 55px rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: -40px;
+  overflow: hidden;
+}
+
+section#overlay-banner-boxes .container .row img {
+  width: 100%;
+  height: auto;
+  transition: all .5s;
+}
+
+section#overlay-banner-boxes .container .row .box-1,
+section#overlay-banner-boxes .container .row .box-2,
+section#overlay-banner-boxes .container .row .box-3 {
+  overflow: hidden;
+}
+
+section#overlay-banner-boxes .container .row .wrap {
+  overflow: hidden;
+}
+
+section#overlay-banner-boxes .container .row .box-1:hover,
+section#overlay-banner-boxes .container .row .box-2:hover,
+section#overlay-banner-boxes .container .row .box-3:hover {
+  cursor: pointer;
+}
+
+section#overlay-banner-boxes .container .row .box-1:hover .img-overlay,
+section#overlay-banner-boxes .container .row .box-2:hover .img-overlay,
+section#overlay-banner-boxes .container .row .box-3:hover .img-overlay {
+  opacity: 1;
+  transition: all .5s;
+}
+
+section#overlay-banner-boxes .container .row .box-1:hover img,
+section#overlay-banner-boxes .container .row .box-2:hover img,
+section#overlay-banner-boxes .container .row .box-3:hover img {
+  transform: scale(1.1);
+  transition: all .5s;
+}
+
+section#overlay-banner-boxes .img-overlay {
+  opacity: 0;
+  width: inherit;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.14);
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  transition: all .5s;
+}
+
+section#short-services {
+  margin-top: 2em;
+  padding-bottom: 3em;
+  margin-bottom: 5em;
+}
+
+section#short-services .container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+section#short-services .container .row {
+  background-color: #F9F7F3;
+}
+
+section#short-services .container .service {
+  padding-left: 2em;
+}
+
+section#short-services .container .service:hover i {
+  transform: rotateY(380deg);
+  transition: ease-out .6s;
+}
+
+section#short-services .container .service i {
+  font-size: 43px;
+  margin-bottom: .4em;
+  transition: .6s;
+}
+
+section#short-services .container .service p.title {
+  font-size: 17px;
+  margin-bottom: .5em;
+}
+
+section#short-services .container .service p.description {
+  font-size: 14px;
+  color: #A4A4A4;
+}
+
+/****************** END BOXES ******************/
+/****************** TRENDING PRODUCTS ******************/
+section#trending-products {
+  margin-bottom: 10em;
+}
+
+section#trending-products .container h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #232323;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+section#trending-products .container .products {
+  /**** ON HOVER EFFECTS ****/
+}
+
+section#trending-products .container .products .box {
+  margin-left: .9em;
+  margin-right: .9em;
+  text-align: center;
+  position: relative;
+}
+
+section#trending-products .container .products .box img {
+  width: 257px;
+  height: 331px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+section#trending-products .container .products .box .wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+section#trending-products .container .products .box .stars {
+  position: absolute;
+  bottom: 5%;
+  left: -3%;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  color: #CDCCCD;
+}
+
+section#trending-products .container .products .box .old-price {
+  text-decoration: line-through;
+}
+
+section#trending-products .container .products .box .sale {
+  position: absolute;
+  z-index: 3;
+  top: 3%;
+  left: 5%;
+  background-color: #7FBC1E;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 9px;
+  width: 39px;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#trending-products .container .products .box .sale span {
+  text-transform: uppercase;
+}
+
+section#trending-products .container .products .box .sold-out {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  background-color: #C82C2D;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 500;
+  width: 58px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#trending-products .container .products .box .sold-out span {
+  text-transform: uppercase;
+}
+
+section#trending-products .container .products .box-1 .stars i:first-child,
+section#trending-products .container .products .box-1 .stars i:nth-child(2),
+section#trending-products .container .products .box-1 .stars i:nth-child(3) {
+  color: #FEC52C;
+}
+
+section#trending-products .container .products .box-5 .stars i {
+  color: #FEC52C;
+}
+
+section#trending-products .container .products .prod-prev {
+  background-color: #B99C87;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: #fff;
+  z-index: 2;
+  position: absolute;
+  left: 47.5%;
+  bottom: -15%;
+}
+
+section#trending-products .container .products .prod-prev i {
+  position: absolute;
+  right: 38%;
+  top: 19%;
+  font-size: 18px;
+}
+
+section#trending-products .container .products .prod-next {
+  background-color: #B99C87;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: #fff;
+  position: absolute;
+  z-index: 2;
+  bottom: -15%;
+  left: 50.5%;
+  margin: 0 auto;
+}
+
+section#trending-products .container .products .prod-next i {
+  position: absolute;
+  right: 30%;
+  top: 19%;
+  font-size: 18px;
+}
+
+section#trending-products .container .products .box-1 .extra-img,
+section#trending-products .container .products .box-2 .extra-img,
+section#trending-products .container .products .box-3 .extra-img,
+section#trending-products .container .products .box-4 .extra-img,
+section#trending-products .container .products .box-5 .extra-img,
+section#trending-products .container .products .box-6 .extra-img {
+  position: absolute;
+  opacity: 0;
+  transition: all .6s;
+  width: 0px;
+  border: 0;
+}
+
+section#trending-products .container .products .box-1 .add-cart,
+section#trending-products .container .products .box-2 .add-cart,
+section#trending-products .container .products .box-3 .add-cart,
+section#trending-products .container .products .box-4 .add-cart,
+section#trending-products .container .products .box-5 .add-cart,
+section#trending-products .container .products .box-6 .add-cart {
+  position: absolute;
+  bottom: -37px;
+  opacity: 0;
+  background-color: #B99C87;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 1px;
+  transition: .7s;
+  padding: 10px 18px;
+}
+
+section#trending-products .container .products .box-1 .eye,
+section#trending-products .container .products .box-2 .eye,
+section#trending-products .container .products .box-3 .eye,
+section#trending-products .container .products .box-4 .eye,
+section#trending-products .container .products .box-5 .eye,
+section#trending-products .container .products .box-6 .eye {
+  position: absolute;
+  top: -35px;
+  right: 10px;
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: .7s;
+}
+
+section#trending-products .container .products .box-1 .eye i,
+section#trending-products .container .products .box-2 .eye i,
+section#trending-products .container .products .box-3 .eye i,
+section#trending-products .container .products .box-4 .eye i,
+section#trending-products .container .products .box-5 .eye i,
+section#trending-products .container .products .box-6 .eye i {
+  padding-top: .4em;
+  transition: .3s;
+}
+
+section#trending-products .container .products .box-1 .eye i:hover,
+section#trending-products .container .products .box-2 .eye i:hover,
+section#trending-products .container .products .box-3 .eye i:hover,
+section#trending-products .container .products .box-4 .eye i:hover,
+section#trending-products .container .products .box-5 .eye i:hover,
+section#trending-products .container .products .box-6 .eye i:hover {
+  color: #B99C87;
+  cursor: pointer;
+  transition: .3s;
+}
+
+section#trending-products .container .products .box-1 .heart,
+section#trending-products .container .products .box-2 .heart,
+section#trending-products .container .products .box-3 .heart,
+section#trending-products .container .products .box-4 .heart,
+section#trending-products .container .products .box-5 .heart,
+section#trending-products .container .products .box-6 .heart {
+  position: absolute;
+  top: -50px;
+  right: 10px;
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: .7s;
+}
+
+section#trending-products .container .products .box-1 .heart i,
+section#trending-products .container .products .box-2 .heart i,
+section#trending-products .container .products .box-3 .heart i,
+section#trending-products .container .products .box-4 .heart i,
+section#trending-products .container .products .box-5 .heart i,
+section#trending-products .container .products .box-6 .heart i {
+  padding-top: .4em;
+  transition: .3s;
+}
+
+section#trending-products .container .products .box-1 .heart i:hover,
+section#trending-products .container .products .box-2 .heart i:hover,
+section#trending-products .container .products .box-3 .heart i:hover,
+section#trending-products .container .products .box-4 .heart i:hover,
+section#trending-products .container .products .box-5 .heart i:hover,
+section#trending-products .container .products .box-6 .heart i:hover {
+  color: #B99C87;
+  cursor: pointer;
+  transition: .3s;
+}
+
+section#trending-products .container .products .box-1:hover .extra-img,
+section#trending-products .container .products .box-2:hover .extra-img,
+section#trending-products .container .products .box-3:hover .extra-img,
+section#trending-products .container .products .box-4:hover .extra-img,
+section#trending-products .container .products .box-5:hover .extra-img,
+section#trending-products .container .products .box-6:hover .extra-img {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition: all .6s;
+  width: 255px;
+  margin-top: .05em;
+  padding-bottom: .12em;
+  border: 0;
+  transform-style: preserve-3d;
+}
+
+section#trending-products .container .products .box-1:hover .add-cart,
+section#trending-products .container .products .box-2:hover .add-cart,
+section#trending-products .container .products .box-3:hover .add-cart,
+section#trending-products .container .products .box-4:hover .add-cart,
+section#trending-products .container .products .box-5:hover .add-cart,
+section#trending-products .container .products .box-6:hover .add-cart {
+  opacity: 1;
+  bottom: 10px;
+  transition: .7s;
+}
+
+section#trending-products .container .products .box-1:hover .eye,
+section#trending-products .container .products .box-2:hover .eye,
+section#trending-products .container .products .box-3:hover .eye,
+section#trending-products .container .products .box-4:hover .eye,
+section#trending-products .container .products .box-5:hover .eye,
+section#trending-products .container .products .box-6:hover .eye {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  border: 1px solid rgba(193, 163, 139, 0.6);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  opacity: 1;
+  transition: .7s;
+}
+
+section#trending-products .container .products .box-1:hover .eye i,
+section#trending-products .container .products .box-2:hover .eye i,
+section#trending-products .container .products .box-3:hover .eye i,
+section#trending-products .container .products .box-4:hover .eye i,
+section#trending-products .container .products .box-5:hover .eye i,
+section#trending-products .container .products .box-6:hover .eye i {
+  padding-top: .4em;
+}
+
+section#trending-products .container .products .box-1:hover .heart,
+section#trending-products .container .products .box-2:hover .heart,
+section#trending-products .container .products .box-3:hover .heart,
+section#trending-products .container .products .box-4:hover .heart,
+section#trending-products .container .products .box-5:hover .heart,
+section#trending-products .container .products .box-6:hover .heart {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  border: 1px solid rgba(193, 163, 139, 0.6);
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+  transition: .7s;
+  border-radius: 50%;
+}
+
+section#trending-products .container .products .box-1:hover .heart i,
+section#trending-products .container .products .box-2:hover .heart i,
+section#trending-products .container .products .box-3:hover .heart i,
+section#trending-products .container .products .box-4:hover .heart i,
+section#trending-products .container .products .box-5:hover .heart i,
+section#trending-products .container .products .box-6:hover .heart i {
+  padding-top: .4em;
+}
+
+/****************** END TRENDING PRODUCTS ******************/
+/****************** DEALS DAY ******************/
+section#deals-day {
+  margin-bottom: 5em;
+}
+
+section#deals-day .container .row .main-left-col {
+  position: relative;
+  margin-bottom: 2em;
+}
+
+section#deals-day .container .row .main-left-col img {
+  display: block;
+  margin: 0 auto;
+}
+
+section#deals-day .container .row .main-left-col .overlay {
+  content: "";
+  width: 434px;
+  height: 601px;
+  background-color: rgba(255, 255, 255, 0.14);
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  opacity: 0;
+  transform: scale(0.1);
+  transition: .4s;
+}
+
+section#deals-day .container .row .main-left-col:hover .overlay {
+  opacity: 1;
+  transform: rotate(180deg);
+  transition: .4s;
+}
+
+section#deals-day .container .row .main-right-col {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 2em;
+  height: 700px;
+}
+
+section#deals-day .container .row .main-right-col h2.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+section#deals-day .container .row .main-right-col .deals-slick {
+  height: 400px;
+}
+
+section#deals-day .container .row .main-right-col .deals-slick .first-item,
+section#deals-day .container .row .main-right-col .deals-slick .second-item {
+  display: flex !important;
+}
+
+section#deals-day .container .row .main-right-col .deals-slick .first-item img,
+section#deals-day .container .row .main-right-col .deals-slick .second-item img {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+section#deals-day .container .row .main-right-col .deals-slick .first-item .stars,
+section#deals-day .container .row .main-right-col .deals-slick .second-item .stars {
+  position: relative;
+  transform: translate(33.5%, -180%);
+}
+
+section#deals-day .container .row .main-right-col .deals-slick .first-item .stars i,
+section#deals-day .container .row .main-right-col .deals-slick .second-item .stars i {
+  font-size: 12px;
+  color: #CDCCCD;
+}
+
+section#deals-day .container .row .main-right-col .deals-slick .first-item h5.prod-title,
+section#deals-day .container .row .main-right-col .deals-slick .second-item h5.prod-title {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 18px;
+}
+
+section#deals-day .container .row .main-right-col .deals-slick .first-item p.price,
+section#deals-day .container .row .main-right-col .deals-slick .second-item p.price {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+section#deals-day .container .row .main-right-col .deals-slick .first-item p.description,
+section#deals-day .container .row .main-right-col .deals-slick .second-item p.description {
+  font-size: 14px;
+  font-weight: 400;
+  color: #A4A4A4;
+  margin-bottom: 18px;
+}
+
+section#deals-day .container .row .main-right-col .deals-slick .first-item h5.offer-title,
+section#deals-day .container .row .main-right-col .deals-slick .second-item h5.offer-title {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 26px;
+}
+
+section#deals-day .container .row .main-right-col .deals-slick .first-item .timer,
+section#deals-day .container .row .main-right-col .deals-slick .second-item .timer {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+
+section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .days,
+section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .hours,
+section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .mins,
+section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .secs,
+section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .days,
+section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .hours,
+section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .mins,
+section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .secs {
+  border: 2px solid #c1a38b;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .days span.main,
+section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .hours span.main,
+section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .mins span.main,
+section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .secs span.main,
+section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .days span.main,
+section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .hours span.main,
+section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .mins span.main,
+section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .secs span.main {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .days span.number,
+section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .hours span.number,
+section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .mins span.number,
+section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .secs span.number,
+section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .days span.number,
+section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .hours span.number,
+section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .mins span.number,
+section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .secs span.number {
+  font-weight: 500;
+  font-size: 20px;
+  display: block;
+  padding-top: .8em;
+  line-height: 1;
+}
+
+section#deals-day .container .row .main-right-col .deals-slick .first-item button.add-cart,
+section#deals-day .container .row .main-right-col .deals-slick .second-item button.add-cart {
+  background-color: #B99C87;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 1px;
+  padding: .7em 1.5em;
+}
+
+section#deals-day .container .row .main-right-col .deals-slick .first-item button.add-cart:hover,
+section#deals-day .container .row .main-right-col .deals-slick .second-item button.add-cart:hover {
+  background-color: #232323;
+}
+
+section#deals-day .container .row .main-right-col .deals-slick .main-deal-prev,
+section#deals-day .container .row .main-right-col .deals-slick .main-deal-next {
+  background-color: #B99C87;
+  color: #fff;
+  border-radius: 50%;
+}
+
+section#deals-day .container .row .main-right-col .deals-slick .main-deal-prev {
+  padding-right: .8em;
+  position: relative;
+  z-index: 1;
+  left: -30px;
+  transform: translateY(440%);
+  opacity: 0;
+  transition: all .4s ease-in;
+}
+
+section#deals-day .container .row .main-right-col .deals-slick .main-deal-next {
+  position: relative;
+  right: -870px;
+  top: -245px;
+  opacity: 0;
+  transition: all .4s ease-in;
+}
+
+section#deals-day .container .row .main-right-col .deals-slick:hover .slick-arrow {
+  opacity: 1 !important;
+  transition: all .4s ease-in !important;
+}
+
+section#deals-day .container .row .main-right-col .deals-slick:hover .mini-deal-prev,
+section#deals-day .container .row .main-right-col .deals-slick:hover .mini-deal-next {
+  opacity: 1 !important;
+  transition: all .4s ease-in !important;
+}
+
+section#deals-day .container .row .main-right-col .mini-slider {
+  width: 310px;
+}
+
+section#deals-day .container .row .main-right-col .mini-slider img {
+  width: 118px !important;
+  height: 152px !important;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+section#deals-day .container .row .main-right-col .mini-slider .mini-deal-prev,
+section#deals-day .container .row .main-right-col .mini-slider .mini-deal-next {
+  background-color: #B99C87;
+  color: #fff;
+  border-radius: 50%;
+}
+
+section#deals-day .container .row .main-right-col .mini-slider .mini-deal-prev {
+  padding: .25em .65em;
+  position: relative;
+  z-index: 1;
+  top: -60px;
+  left: -33px;
+  transform: translateY(440%);
+}
+
+section#deals-day .container .row .main-right-col .mini-slider .mini-deal-next {
+  padding: .25em .65em;
+  position: relative;
+  right: -275px;
+  top: -95px;
+}
+
+/****************** END DEALS DAY ******************/
+/****************** TRENDY CLUB WATCHES ******************/
+section#trendy-club {
+  background: url("../images/parallax.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  margin-bottom: 5em;
+}
+
+section#trendy-club .container {
+  text-align: center;
+  color: #fff;
+}
+
+section#trendy-club .container .row .content {
+  position: relative;
+  top: -50%;
+  transform: translateY(40%);
+}
+
+section#trendy-club .container .row .content h1 {
+  font-family: "Playfair Display";
+  font-size: 74px;
+  font-weight: 400;
+  margin-bottom: 13px;
+}
+
+section#trendy-club .container .row .content .shape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+section#trendy-club .container .row .content .shape .line {
+  content: "";
+  width: 100px;
+  margin-right: 1em;
+  height: 1px;
+  display: block;
+  background-color: #B99C87;
+}
+
+section#trendy-club .container .row .content .shape .line:last-of-type {
+  margin-left: 1em;
+}
+
+section#trendy-club .container .row .content .shape .icon i {
+  color: #B99C87;
+  font-size: 32px;
+}
+
+section#trendy-club .container .row .content p.text {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 28px;
+}
+
+section#trendy-club .container .row .content .shop-now {
+  background-color: #B99C87;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 1px;
+  font-size: 14px;
+  padding: .7em 1.5em;
+}
+
+section#trendy-club .container .row .content .shop-now:hover {
+  background-color: #232323;
+}
+
+/****************** END TRENDY CLUB ******************/
+/****************** BRANDS SECTION ******************/
+section#brands .container .row {
+  text-align: center;
+}
+
+/****************** END BRANDS SECTION ******************/
+section#brands {
+  margin-bottom: 5em;
+}
+
+/****************** SPECIAL PRODUCTS SECTION ******************/
+section#special-products {
+  margin-bottom: 10em;
+}
+
+section#special-products .container h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #232323;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+section#special-products .container .special-products {
+  /**** ON HOVER EFFECTS ****/
+}
+
+section#special-products .container .special-products .box {
+  margin-left: .9em;
+  margin-right: .9em;
+  text-align: center;
+  position: relative;
+}
+
+section#special-products .container .special-products .box img {
+  width: 257px;
+  height: 331px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+section#special-products .container .special-products .box .wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+section#special-products .container .special-products .box .stars {
+  position: absolute;
+  bottom: 5%;
+  left: -3%;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  color: #CDCCCD;
+}
+
+section#special-products .container .special-products .box .old-price {
+  text-decoration: line-through;
+}
+
+section#special-products .container .special-products .box .sale {
+  position: absolute;
+  z-index: 3;
+  top: 3%;
+  left: 5%;
+  background-color: #7FBC1E;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 9px;
+  width: 39px;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#special-products .container .special-products .box .sale span {
+  text-transform: uppercase;
+}
+
+section#special-products .container .special-products .box .sold-out {
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  background-color: #C82C2D;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 500;
+  width: 58px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#special-products .container .special-products .box .sold-out span {
+  text-transform: uppercase;
+}
+
+section#special-products .container .special-products .box-1 .stars i:first-child,
+section#special-products .container .special-products .box-1 .stars i:nth-child(2),
+section#special-products .container .special-products .box-1 .stars i:nth-child(3) {
+  color: #FEC52C;
+}
+
+section#special-products .container .special-products .box-5 .stars i {
+  color: #FEC52C;
+}
+
+section#special-products .container .special-products .prod-prev {
+  background-color: #B99C87;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: #fff;
+  z-index: 2;
+  position: absolute;
+  left: 47.5%;
+  bottom: -15%;
+}
+
+section#special-products .container .special-products .prod-prev i {
+  position: absolute;
+  right: 38%;
+  top: 19%;
+  font-size: 18px;
+}
+
+section#special-products .container .special-products .prod-next {
+  background-color: #B99C87;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: #fff;
+  position: absolute;
+  z-index: 2;
+  bottom: -15%;
+  left: 50.5%;
+  margin: 0 auto;
+}
+
+section#special-products .container .special-products .prod-next i {
+  position: absolute;
+  right: 30%;
+  top: 19%;
+  font-size: 18px;
+}
+
+section#special-products .container .special-products .box-1 .extra-img,
+section#special-products .container .special-products .box-2 .extra-img,
+section#special-products .container .special-products .box-3 .extra-img,
+section#special-products .container .special-products .box-4 .extra-img,
+section#special-products .container .special-products .box-5 .extra-img,
+section#special-products .container .special-products .box-6 .extra-img {
+  position: absolute;
+  opacity: 0;
+  transition: all .6s;
+  width: 0px;
+  border: 0;
+}
+
+section#special-products .container .special-products .box-1 .add-cart,
+section#special-products .container .special-products .box-2 .add-cart,
+section#special-products .container .special-products .box-3 .add-cart,
+section#special-products .container .special-products .box-4 .add-cart,
+section#special-products .container .special-products .box-5 .add-cart,
+section#special-products .container .special-products .box-6 .add-cart {
+  position: absolute;
+  bottom: -37px;
+  opacity: 0;
+  background-color: #B99C87;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 1px;
+  transition: .7s;
+  padding: 10px 18px;
+}
+
+section#special-products .container .special-products .box-1 .eye,
+section#special-products .container .special-products .box-2 .eye,
+section#special-products .container .special-products .box-3 .eye,
+section#special-products .container .special-products .box-4 .eye,
+section#special-products .container .special-products .box-5 .eye,
+section#special-products .container .special-products .box-6 .eye {
+  position: absolute;
+  top: -35px;
+  right: 10px;
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: .7s;
+}
+
+section#special-products .container .special-products .box-1 .eye i,
+section#special-products .container .special-products .box-2 .eye i,
+section#special-products .container .special-products .box-3 .eye i,
+section#special-products .container .special-products .box-4 .eye i,
+section#special-products .container .special-products .box-5 .eye i,
+section#special-products .container .special-products .box-6 .eye i {
+  padding-top: .4em;
+  transition: .3s;
+}
+
+section#special-products .container .special-products .box-1 .eye i:hover,
+section#special-products .container .special-products .box-2 .eye i:hover,
+section#special-products .container .special-products .box-3 .eye i:hover,
+section#special-products .container .special-products .box-4 .eye i:hover,
+section#special-products .container .special-products .box-5 .eye i:hover,
+section#special-products .container .special-products .box-6 .eye i:hover {
+  color: #B99C87;
+  cursor: pointer;
+  transition: .3s;
+}
+
+section#special-products .container .special-products .box-1 .heart,
+section#special-products .container .special-products .box-2 .heart,
+section#special-products .container .special-products .box-3 .heart,
+section#special-products .container .special-products .box-4 .heart,
+section#special-products .container .special-products .box-5 .heart,
+section#special-products .container .special-products .box-6 .heart {
+  position: absolute;
+  top: -50px;
+  right: 10px;
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+  border-radius: 50%;
+  transition: .7s;
+}
+
+section#special-products .container .special-products .box-1 .heart i,
+section#special-products .container .special-products .box-2 .heart i,
+section#special-products .container .special-products .box-3 .heart i,
+section#special-products .container .special-products .box-4 .heart i,
+section#special-products .container .special-products .box-5 .heart i,
+section#special-products .container .special-products .box-6 .heart i {
+  padding-top: .4em;
+  transition: .3s;
+}
+
+section#special-products .container .special-products .box-1 .heart i:hover,
+section#special-products .container .special-products .box-2 .heart i:hover,
+section#special-products .container .special-products .box-3 .heart i:hover,
+section#special-products .container .special-products .box-4 .heart i:hover,
+section#special-products .container .special-products .box-5 .heart i:hover,
+section#special-products .container .special-products .box-6 .heart i:hover {
+  color: #B99C87;
+  cursor: pointer;
+  transition: .3s;
+}
+
+section#special-products .container .special-products .box-1:hover .extra-img,
+section#special-products .container .special-products .box-2:hover .extra-img,
+section#special-products .container .special-products .box-3:hover .extra-img,
+section#special-products .container .special-products .box-4:hover .extra-img,
+section#special-products .container .special-products .box-5:hover .extra-img,
+section#special-products .container .special-products .box-6:hover .extra-img {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition: all .6s;
+  width: 255px;
+  margin-top: .05em;
+  padding-bottom: .12em;
+  border: 0;
+  transform-style: preserve-3d;
+}
+
+section#special-products .container .special-products .box-1:hover .add-cart,
+section#special-products .container .special-products .box-2:hover .add-cart,
+section#special-products .container .special-products .box-3:hover .add-cart,
+section#special-products .container .special-products .box-4:hover .add-cart,
+section#special-products .container .special-products .box-5:hover .add-cart,
+section#special-products .container .special-products .box-6:hover .add-cart {
+  opacity: 1;
+  bottom: 10px;
+  transition: .7s;
+}
+
+section#special-products .container .special-products .box-1:hover .eye,
+section#special-products .container .special-products .box-2:hover .eye,
+section#special-products .container .special-products .box-3:hover .eye,
+section#special-products .container .special-products .box-4:hover .eye,
+section#special-products .container .special-products .box-5:hover .eye,
+section#special-products .container .special-products .box-6:hover .eye {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  border: 1px solid rgba(193, 163, 139, 0.6);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  opacity: 1;
+  transition: .7s;
+}
+
+section#special-products .container .special-products .box-1:hover .eye i,
+section#special-products .container .special-products .box-2:hover .eye i,
+section#special-products .container .special-products .box-3:hover .eye i,
+section#special-products .container .special-products .box-4:hover .eye i,
+section#special-products .container .special-products .box-5:hover .eye i,
+section#special-products .container .special-products .box-6:hover .eye i {
+  padding-top: .4em;
+}
+
+section#special-products .container .special-products .box-1:hover .heart,
+section#special-products .container .special-products .box-2:hover .heart,
+section#special-products .container .special-products .box-3:hover .heart,
+section#special-products .container .special-products .box-4:hover .heart,
+section#special-products .container .special-products .box-5:hover .heart,
+section#special-products .container .special-products .box-6:hover .heart {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  border: 1px solid rgba(193, 163, 139, 0.6);
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+  transition: .7s;
+  border-radius: 50%;
+}
+
+section#special-products .container .special-products .box-1:hover .heart i,
+section#special-products .container .special-products .box-2:hover .heart i,
+section#special-products .container .special-products .box-3:hover .heart i,
+section#special-products .container .special-products .box-4:hover .heart i,
+section#special-products .container .special-products .box-5:hover .heart i,
+section#special-products .container .special-products .box-6:hover .heart i {
+  padding-top: .4em;
+}
+
+/****************** END SPECIAL PRODUCTS SECTION ******************/
+/****************** LATEST NEWS SECTION ******************/
+section#latest-news {
+  margin-bottom: 5em;
+}
+
+section#latest-news .container h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #232323;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+section#latest-news .container .row .item .card {
+  border: 0;
+  overflow: hidden;
+}
+
+section#latest-news .container .row .item .card .date {
+  color: grey;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+section#latest-news .container .row .item .card .date i {
+  color: #B99C87;
+}
+
+section#latest-news .container .row .item .card .card-title {
+  text-transform: capitalize;
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+section#latest-news .container .row .item .card .card-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #979797;
+}
+
+section#latest-news .container .row .item .card .card-body {
+  overflow: hidden;
+}
+
+/****************** END LATEST NEWS ******************/
+/****************** PRE FOOTER SECTION ******************/
+section#pre-footer {
+  background-color: #B99C87;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+section#pre-footer .container .row .media-object {
+  display: flex;
+  align-items: center;
+}
+
+section#pre-footer .container .row .media-object .media i {
+  background-color: #232323;
+  color: #fff;
+  padding: .7em;
+  border-radius: 50%;
+  font-size: 32px;
+}
+
+section#pre-footer .container .row .media-object .content {
+  padding-left: 1em;
+  color: #fff;
+}
+
+section#pre-footer .container .row .media-object .content p {
+  margin-bottom: .1em;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/****************** END PRE FOOTER ******************/
+/****************** FOOTER ******************/
+footer .first-section .main-wrapper {
+  display: flex;
+}
+
+footer .first-section .main-wrapper .left-side {
+  width: 960px;
+  height: 361px;
+}
+
+footer .first-section .main-wrapper .left-side .container {
+  margin-left: 15em;
+  margin-top: 4em;
+}
+
+footer .first-section .main-wrapper .left-side .container img {
+  margin-bottom: 27px;
+}
+
+footer .first-section .main-wrapper .left-side .container p.desc {
+  font-size: 14px;
+  font-weight: 300;
+  color: #666666;
+}
+
+footer .first-section .main-wrapper .left-side p.follow {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+footer .first-section .main-wrapper .left-side .social-media i {
+  padding-right: 1em;
+}
+
+footer .first-section .main-wrapper .right-side {
+  width: 960px;
+  background-color: #232323;
+}
+
+footer .first-section .main-wrapper .right-side .container {
+  margin-left: 4em;
+  margin-top: 4.4em;
+  max-width: 800px;
+}
+
+footer .first-section .main-wrapper .right-side .container p {
+  color: #666666;
+  margin-bottom: 3em;
+}
+
+footer .first-section .main-wrapper .right-side .container .input {
+  display: flex;
+  margin-bottom: 3em;
+}
+
+footer .first-section .main-wrapper .right-side .container .input input {
+  background-color: #3b3b3b;
+  border: 0;
+  border-radius: 1px;
+}
+
+footer .first-section .main-wrapper .right-side .container .input button {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #B99C87;
+  border-radius: 1px;
+}
+
+footer .first-section .main-wrapper .right-side .container .footer-navs ul {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+}
+
+footer .first-section .main-wrapper .right-side .container .footer-navs ul li {
+  color: #9d9d9d;
+  padding-right: .5em;
+}
+
+footer .first-section .main-wrapper .right-side .container .footer-navs ul li a {
+  text-decoration: none;
+  color: #9d9d9d;
+}
+
+footer .second-section {
+  background-color: #232323;
+}
+
+footer .second-section .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .second-section .wrapper .left-side p {
+  color: #fff;
+  margin: 0;
+}
+
+/****************** END FOOTER ******************/
+/********************** MEDIA QUERIES **********************/
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .container {
+    max-width: 1140px;
+  }
+  .carousel-wrapper .hero {
+    background-image: url("../images/S1_2048x.png");
+  }
+  .carousel-wrapper .hero .container .content {
+    transform: translateY(90%);
+  }
+  .carousel-wrapper .hero .container .content .big-sale {
+    font-size: 22px;
+  }
+  .carousel-wrapper .hero .container .content .club-watches {
+    font-size: 60px;
+  }
+  .carousel-wrapper .hero .container .content .description {
+    font-size: 15px;
+  }
+  .carousel-wrapper .hero .container .content .shop-now {
+    font-size: 12px;
+  }
+  .carousel-wrapper .hero .container .content .shop-now:hover {
+    background-color: #232323;
+  }
+  .carousel-wrapper .overlay-2 {
+    background-image: url("../images/S2_2048x.png");
+  }
+  .carousel-wrapper .overlay-2 .container .content {
+    top: 55%;
+    left: 55%;
+    transform: translateY(90%);
+  }
+  .carousel-wrapper .overlay-2 .container .content .new-arrivals {
+    font-size: 22px;
+  }
+  .carousel-wrapper .overlay-2 .container .content .high-watches {
+    font-size: 60px;
+  }
+  .carousel-wrapper .prev {
+    width: 35px;
+    height: 35px;
+    left: 2%;
+    top: 40%;
+  }
+  .carousel-wrapper .prev i {
+    position: absolute;
+    right: 38%;
+    top: 18%;
+    font-size: 24px;
+  }
+  .carousel-wrapper .next {
+    width: 35px;
+    height: 35px;
+    right: 2%;
+    top: 40%;
+  }
+  .carousel-wrapper .next i {
+    position: absolute;
+    right: 30%;
+    top: 16%;
+    font-size: 24px;
+  }
+  .container .row {
+    margin: 0 auto;
+    position: relative;
+    top: 0px;
+  }
+  section#trending-products .container h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: #232323;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+  section#trending-products .container .tabs {
+    text-align: center;
+    margin-bottom: 4em;
+  }
+  section#trending-products .container .tabs button {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #666666;
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+  section#trending-products .container .tabs button:focus, section#trending-products .container .tabs button:active,
+  section#trending-products .container .tabs button button::-moz-focus-inner {
+    background-color: #B99C87;
+    color: #fff;
+    border: 0;
+  }
+  section#trending-products .container .products .prod-prev {
+    background-color: #B99C87;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    left: 46%;
+    bottom: -15%;
+  }
+  section#trending-products .container .products .prod-prev i {
+    position: absolute;
+    right: 38%;
+    top: 19%;
+    font-size: 18px;
+  }
+  section#trending-products .container .products .prod-next {
+    background-color: #B99C87;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    bottom: -15%;
+    left: 51%;
+    margin: 0 auto;
+  }
+  section#trending-products .container .products .prod-next i {
+    position: absolute;
+    right: 30%;
+    top: 19%;
+    font-size: 18px;
+  }
+  /****************** DEALS DAY ******************/
+  section#deals-day .container .row .main-left-col {
+    position: relative;
+    margin-bottom: 2em;
+  }
+  section#deals-day .container .row .main-left-col img {
+    display: block;
+    margin: 0 auto;
+  }
+  section#deals-day .container .row .main-left-col .overlay {
+    content: "";
+    width: 434px;
+    height: 601px;
+    background-color: rgba(255, 255, 255, 0.14);
+    position: absolute;
+    top: 10px;
+    left: 340px;
+    opacity: 0;
+    transform: scale(0.1);
+    transition: .4s;
+  }
+  section#deals-day .container .row .main-left-col:hover .overlay {
+    opacity: 1;
+    transform: rotate(180deg);
+    transition: .4s;
+  }
+  section#deals-day .container .row .main-right-col {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 2em;
+    height: 750px;
+  }
+  section#deals-day .container .row .main-right-col h2.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick {
+    height: 450px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item {
+    display: flex !important;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item img,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item img {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .stars,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .stars {
+    position: relative;
+    transform: translate(33.5%, -180%);
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .stars i,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .stars i {
+    font-size: 12px;
+    color: #CDCCCD;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item h5.prod-title,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item h5.prod-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 18px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item p.price,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item p.price {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item p.description,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item p.description {
+    font-size: 14px;
+    font-weight: 400;
+    color: #A4A4A4;
+    margin-bottom: 18px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item h5.offer-title,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item h5.offer-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 26px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin-bottom: 23px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .days,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .hours,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .mins,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .secs,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .days,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .hours,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .mins,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .secs {
+    border: 2px solid #c1a38b;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .days span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .hours span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .mins span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .secs span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .days span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .hours span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .mins span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .secs span.main {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .days span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .hours span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .mins span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .secs span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .days span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .hours span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .mins span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .secs span.number {
+    font-weight: 500;
+    font-size: 20px;
+    display: block;
+    padding-top: .8em;
+    line-height: 1;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item button.add-cart,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item button.add-cart {
+    background-color: #B99C87;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 1px;
+    padding: .7em 1.5em;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item button.add-cart:hover,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item button.add-cart:hover {
+    background-color: #232323;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .main-deal-prev,
+  section#deals-day .container .row .main-right-col .deals-slick .main-deal-next {
+    background-color: #B99C87;
+    color: #fff;
+    border-radius: 50%;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .main-deal-prev {
+    padding-right: .8em;
+    position: relative;
+    z-index: 1;
+    left: -30px;
+    transform: translateY(440%);
+    opacity: 0;
+    transition: all .4s ease-in;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .main-deal-next {
+    position: relative;
+    transform: translate(493%, -180%);
+    opacity: 0;
+    transition: all .4s ease-in;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick:hover .slick-arrow {
+    opacity: 1 !important;
+    transition: all .4s ease-in !important;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick:hover .mini-deal-prev,
+  section#deals-day .container .row .main-right-col .deals-slick:hover .mini-deal-next {
+    opacity: 1 !important;
+    transition: all .4s ease-in !important;
+  }
+  section#deals-day .container .row .main-right-col .mini-slider {
+    left: 13px;
+    width: 310px;
+  }
+  section#deals-day .container .row .main-right-col .mini-slider img {
+    width: 118px !important;
+    height: 152px !important;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  section#deals-day .container .row .main-right-col .mini-slider .mini-deal-prev,
+  section#deals-day .container .row .main-right-col .mini-slider .mini-deal-next {
+    background-color: #B99C87;
+    color: #fff;
+    border-radius: 50%;
+  }
+  section#deals-day .container .row .main-right-col .mini-slider .mini-deal-prev {
+    padding: .25em .65em;
+    position: relative;
+    z-index: 1;
+    top: -60px;
+    left: -33px;
+    transform: translateY(440%);
+  }
+  section#deals-day .container .row .main-right-col .mini-slider .mini-deal-next {
+    padding: .25em .65em;
+    position: relative;
+    right: -275px;
+    top: -95px;
+  }
+  /****************** END DEALS DAY ******************/
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  /******** HERO ********/
+  .carousel-wrapper .hero {
+    background-image: url("../images/S1_2048x.png");
+  }
+  .carousel-wrapper .hero .container .content {
+    transform: translateY(90%);
+  }
+  .carousel-wrapper .hero .container .content .big-sale {
+    font-size: 22px;
+  }
+  .carousel-wrapper .hero .container .content .club-watches {
+    font-size: 60px;
+  }
+  .carousel-wrapper .hero .container .content .description {
+    font-size: 14px;
+  }
+  .carousel-wrapper .hero .container .content .shop-now {
+    font-size: 12px;
+  }
+  .carousel-wrapper .hero .container .content .shop-now:hover {
+    background-color: #232323;
+  }
+  .carousel-wrapper .overlay-2 {
+    background-image: url("../images/S2_2048x.png");
+  }
+  .carousel-wrapper .overlay-2 .container .content {
+    top: 55%;
+    left: 45%;
+    transform: translateY(90%);
+  }
+  .carousel-wrapper .overlay-2 .container .content .new-arrivals {
+    font-size: 22px;
+  }
+  .carousel-wrapper .overlay-2 .container .content .high-watches {
+    font-size: 60px;
+  }
+  .carousel-wrapper .prev {
+    width: 35px;
+    height: 35px;
+    left: 2%;
+    top: 40%;
+  }
+  .carousel-wrapper .prev i {
+    position: absolute;
+    right: 38%;
+    top: 18%;
+    font-size: 24px;
+  }
+  .carousel-wrapper .next {
+    width: 35px;
+    height: 35px;
+    right: 2%;
+    top: 40%;
+  }
+  .carousel-wrapper .next i {
+    position: absolute;
+    right: 30%;
+    top: 16%;
+    font-size: 24px;
+  }
+  .container .row {
+    width: 945px;
+    margin: 0 auto;
+    margin-top: 60px;
+    position: relative;
+    top: 0px;
+  }
+  section#trending-products .container h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: #232323;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+  section#trending-products .container .tabs {
+    text-align: center;
+    margin-bottom: 4em;
+  }
+  section#trending-products .container .tabs button {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #666666;
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+  section#trending-products .container .tabs button:focus, section#trending-products .container .tabs button:active,
+  section#trending-products .container .tabs button button::-moz-focus-inner {
+    background-color: #B99C87;
+    color: #fff;
+    border: 0;
+  }
+  section#trending-products .container .products .prod-prev {
+    background-color: #B99C87;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    left: 46%;
+    bottom: -15%;
+  }
+  section#trending-products .container .products .prod-prev i {
+    position: absolute;
+    right: 38%;
+    top: 19%;
+    font-size: 18px;
+  }
+  section#trending-products .container .products .prod-next {
+    background-color: #B99C87;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    bottom: -15%;
+    left: 51%;
+    margin: 0 auto;
+  }
+  section#trending-products .container .products .prod-next i {
+    position: absolute;
+    right: 30%;
+    top: 19%;
+    font-size: 18px;
+  }
+  /****************** DEALS DAY ******************/
+  section#deals-day .container .row .main-left-col {
+    position: relative;
+    margin-bottom: 2em;
+  }
+  section#deals-day .container .row .main-left-col img {
+    display: block;
+    margin: 0 auto;
+  }
+  section#deals-day .container .row .main-left-col .overlay {
+    content: "";
+    width: 434px;
+    height: 601px;
+    background-color: rgba(255, 255, 255, 0.14);
+    position: absolute;
+    top: 10px;
+    left: 255px;
+    opacity: 0;
+    transform: scale(0.1);
+    transition: .4s;
+  }
+  section#deals-day .container .row .main-left-col:hover .overlay {
+    opacity: 1;
+    transform: rotate(180deg);
+    transition: .4s;
+  }
+  section#deals-day .container .row .main-right-col {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 2em;
+    height: 750px;
+  }
+  section#deals-day .container .row .main-right-col h2.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick {
+    height: 450px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item {
+    display: flex !important;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item img,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item img {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .stars,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .stars {
+    position: relative;
+    transform: translate(33.5%, -180%);
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .stars i,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .stars i {
+    font-size: 12px;
+    color: #CDCCCD;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item h5.prod-title,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item h5.prod-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 18px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item p.price,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item p.price {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item p.description,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item p.description {
+    font-size: 14px;
+    font-weight: 400;
+    color: #A4A4A4;
+    margin-bottom: 18px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item h5.offer-title,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item h5.offer-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 26px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin-bottom: 23px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .days,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .hours,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .mins,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .secs,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .days,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .hours,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .mins,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .secs {
+    border: 2px solid #c1a38b;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .days span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .hours span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .mins span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .secs span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .days span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .hours span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .mins span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .secs span.main {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .days span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .hours span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .mins span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .secs span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .days span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .hours span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .mins span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .secs span.number {
+    font-weight: 500;
+    font-size: 20px;
+    display: block;
+    padding-top: .8em;
+    line-height: 1;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item button.add-cart,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item button.add-cart {
+    background-color: #B99C87;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 1px;
+    padding: .7em 1.5em;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item button.add-cart:hover,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item button.add-cart:hover {
+    background-color: #232323;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .main-deal-prev,
+  section#deals-day .container .row .main-right-col .deals-slick .main-deal-next {
+    background-color: #B99C87;
+    color: #fff;
+    border-radius: 50%;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .main-deal-prev {
+    padding-right: .8em;
+    position: relative;
+    z-index: 1;
+    left: -30px;
+    transform: translateY(440%);
+    opacity: 0;
+    transition: all .4s ease-in;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .main-deal-next {
+    position: relative;
+    transform: translate(13%, -1320%);
+    opacity: 0;
+    transition: all .4s ease-in;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick:hover .slick-arrow {
+    opacity: 1 !important;
+    transition: all .4s ease-in !important;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick:hover .mini-deal-prev,
+  section#deals-day .container .row .main-right-col .deals-slick:hover .mini-deal-next {
+    opacity: 1 !important;
+    transition: all .4s ease-in !important;
+  }
+  section#deals-day .container .row .main-right-col .mini-slider {
+    left: 13px;
+    width: 310px;
+  }
+  section#deals-day .container .row .main-right-col .mini-slider img {
+    width: 118px !important;
+    height: 152px !important;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  section#deals-day .container .row .main-right-col .mini-slider .mini-deal-prev,
+  section#deals-day .container .row .main-right-col .mini-slider .mini-deal-next {
+    background-color: #B99C87;
+    color: #fff;
+    border-radius: 50%;
+  }
+  section#deals-day .container .row .main-right-col .mini-slider .mini-deal-prev {
+    padding: .25em .65em;
+    position: relative;
+    z-index: 1;
+    top: -60px;
+    left: -33px;
+    transform: translateY(440%);
+  }
+  section#deals-day .container .row .main-right-col .mini-slider .mini-deal-next {
+    padding: .25em .65em;
+    position: relative;
+    right: -275px;
+    top: -95px;
+  }
+  /****************** END DEALS DAY ******************/
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  /******** HERO ********/
+  .carousel-wrapper .hero {
+    background-image: url("../images/S1_2048x.png");
+  }
+  .carousel-wrapper .hero .container .content {
+    transform: translateY(0%);
+    margin: 0 auto;
+    text-align: center;
+  }
+  .carousel-wrapper .hero .container .content .big-sale {
+    font-size: 22px;
+  }
+  .carousel-wrapper .hero .container .content .club-watches {
+    font-size: 60px;
+  }
+  .carousel-wrapper .hero .container .content .description {
+    font-size: 14px;
+  }
+  .carousel-wrapper .hero .container .content .shop-now {
+    font-size: 12px;
+  }
+  .carousel-wrapper .hero .container .content .shop-now:hover {
+    background-color: #232323;
+  }
+  .carousel-wrapper .overlay-2 {
+    background-image: url("../images/S2_2048x.png");
+  }
+  .carousel-wrapper .overlay-2 .container .content {
+    top: 55%;
+    left: 0;
+    transform: translateY(90%);
+    margin: 0 auto;
+    text-align: center;
+  }
+  .carousel-wrapper .overlay-2 .container .content .new-arrivals {
+    font-size: 22px;
+  }
+  .carousel-wrapper .overlay-2 .container .content .high-watches {
+    font-size: 60px;
+  }
+  .carousel-wrapper .prev {
+    width: 35px;
+    height: 35px;
+    left: 2%;
+    top: 40%;
+  }
+  .carousel-wrapper .prev i {
+    position: absolute;
+    right: 38%;
+    top: 18%;
+    font-size: 24px;
+  }
+  .carousel-wrapper .next {
+    width: 35px;
+    height: 35px;
+    right: 2%;
+    top: 40%;
+  }
+  .carousel-wrapper .next i {
+    position: absolute;
+    right: 30%;
+    top: 16%;
+    font-size: 24px;
+  }
+  .container .row {
+    width: 722px;
+    margin: 0 auto;
+    margin-top: 60px;
+    position: relative;
+    top: 0px;
+  }
+  section#trending-products .container h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: #232323;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+  section#trending-products .container .tabs {
+    text-align: center;
+    margin-bottom: 4em;
+  }
+  section#trending-products .container .tabs button {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #666666;
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+  section#trending-products .container .tabs button:focus, section#trending-products .container .tabs button:active,
+  section#trending-products .container .tabs button button::-moz-focus-inner {
+    background-color: #B99C87;
+    color: #fff;
+    border: 0;
+  }
+  section#trending-products .container .products .prod-prev {
+    background-color: #B99C87;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    left: 45%;
+    bottom: -15%;
+  }
+  section#trending-products .container .products .prod-prev i {
+    position: absolute;
+    right: 38%;
+    top: 19%;
+    font-size: 18px;
+  }
+  section#trending-products .container .products .prod-next {
+    background-color: #B99C87;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    bottom: -15%;
+    left: 52%;
+    margin: 0 auto;
+  }
+  section#trending-products .container .products .prod-next i {
+    position: absolute;
+    right: 30%;
+    top: 19%;
+    font-size: 18px;
+  }
+  /****************** DEALS DAY ******************/
+  section#deals-day .container .row .main-left-col {
+    position: relative;
+    margin-bottom: 2em;
+  }
+  section#deals-day .container .row .main-left-col img {
+    display: block;
+    margin: 0 auto;
+  }
+  section#deals-day .container .row .main-left-col .overlay {
+    content: "";
+    width: 434px;
+    height: 601px;
+    background-color: rgba(255, 255, 255, 0.14);
+    position: absolute;
+    top: 10px;
+    left: 255px;
+    opacity: 0;
+    transform: scale(0.1);
+    transition: .4s;
+  }
+  section#deals-day .container .row .main-left-col:hover .overlay {
+    opacity: 1;
+    transform: rotate(180deg);
+    transition: .4s;
+  }
+  section#deals-day .container .row .main-right-col {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 2em;
+    height: 1090px;
+  }
+  section#deals-day .container .row .main-right-col h2.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick {
+    height: 450px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item {
+    display: flex !important;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item {
+    text-align: center;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item img,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item img {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .stars,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .stars {
+    position: relative;
+    transform: translate(-0.5%, -180%);
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .stars i,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .stars i {
+    font-size: 12px;
+    color: #CDCCCD;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item h5.prod-title,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item h5.prod-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 18px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item p.price,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item p.price {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item p.description,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item p.description {
+    font-size: 14px;
+    font-weight: 400;
+    color: #A4A4A4;
+    margin-bottom: 18px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item h5.offer-title,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item h5.offer-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 26px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin-bottom: 23px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .days,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .hours,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .mins,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .secs,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .days,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .hours,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .mins,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .secs {
+    border: 2px solid #c1a38b;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .days span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .hours span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .mins span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .secs span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .days span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .hours span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .mins span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .secs span.main {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .days span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .hours span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .mins span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .secs span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .days span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .hours span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .mins span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .secs span.number {
+    font-weight: 500;
+    font-size: 20px;
+    display: block;
+    padding-top: .8em;
+    line-height: 1;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item button.add-cart,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item button.add-cart {
+    background-color: #B99C87;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 1px;
+    padding: .7em 1.5em;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item button.add-cart:hover,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item button.add-cart:hover {
+    background-color: #232323;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .main-deal-prev,
+  section#deals-day .container .row .main-right-col .deals-slick .main-deal-next {
+    background-color: #B99C87;
+    color: #fff;
+    border-radius: 50%;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .main-deal-prev {
+    padding-right: .8em;
+    position: relative;
+    z-index: 1;
+    left: -30px;
+    transform: translateY(440%);
+    opacity: 0;
+    transition: all .4s ease-in;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .main-deal-next {
+    position: relative;
+    transform: translate(-650%, -1420%);
+    opacity: 0;
+    z-index: 1;
+    transition: all .4s ease-in;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick:hover .slick-arrow {
+    opacity: 1 !important;
+    transition: all .4s ease-in !important;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick:hover .mini-deal-prev,
+  section#deals-day .container .row .main-right-col .deals-slick:hover .mini-deal-next {
+    opacity: 1 !important;
+    transition: all .4s ease-in !important;
+  }
+  section#deals-day .container .row .main-right-col .mini-slider {
+    left: 13px;
+    width: 310px;
+    display: none;
+  }
+  section#deals-day .container .row .main-right-col .mini-slider img {
+    width: 118px !important;
+    height: 152px !important;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  section#deals-day .container .row .main-right-col .mini-slider .mini-deal-prev,
+  section#deals-day .container .row .main-right-col .mini-slider .mini-deal-next {
+    background-color: #B99C87;
+    color: #fff;
+    border-radius: 50%;
+  }
+  section#deals-day .container .row .main-right-col .mini-slider .mini-deal-prev {
+    padding: .25em .65em;
+    position: relative;
+    z-index: 1;
+    top: -60px;
+    left: -33px;
+    transform: translateY(440%);
+  }
+  section#deals-day .container .row .main-right-col .mini-slider .mini-deal-next {
+    padding: .25em .65em;
+    position: relative;
+    right: -275px;
+    top: -95px;
+  }
+  /****************** END DEALS DAY ******************/
+  /****************** TRENDY CLUB WATCHES ******************/
+  section#trendy-club {
+    background: url("../images/parallax.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 500px;
+  }
+  section#trendy-club .container {
+    text-align: center;
+    color: #fff;
+  }
+  section#trendy-club .container .row .content {
+    position: relative;
+    top: -50%;
+    transform: translateY(40%);
+  }
+  section#trendy-club .container .row .content h1 {
+    font-family: "Playfair Display";
+    font-size: 54px;
+    font-weight: 400;
+    margin-bottom: 13px;
+  }
+  section#trendy-club .container .row .content .shape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  section#trendy-club .container .row .content .shape .line {
+    content: "";
+    width: 100px;
+    margin-right: 1em;
+    height: 1px;
+    display: block;
+    background-color: #B99C87;
+  }
+  section#trendy-club .container .row .content .shape .line:last-of-type {
+    margin-left: 1em;
+  }
+  section#trendy-club .container .row .content .shape .icon i {
+    color: #B99C87;
+    font-size: 32px;
+  }
+  section#trendy-club .container .row .content p.text {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 28px;
+  }
+  section#trendy-club .container .row .content .shop-now {
+    background-color: #B99C87;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 1px;
+    font-size: 14px;
+    padding: .7em 1.5em;
+  }
+  section#trendy-club .container .row .content .shop-now:hover {
+    background-color: #232323;
+  }
+  /****************** END TRENDY CLUB ******************/
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  /******** HERO ********/
+  .carousel-wrapper .hero {
+    background-image: url("../images/S1_2048x.png");
+  }
+  .carousel-wrapper .hero .container .content {
+    transform: translateY(90%);
+    margin: 0 auto;
+    text-align: center;
+  }
+  .carousel-wrapper .hero .container .content .big-sale {
+    font-size: 22px;
+  }
+  .carousel-wrapper .hero .container .content .club-watches {
+    font-size: 60px;
+  }
+  .carousel-wrapper .hero .container .content .description {
+    font-size: 14px;
+  }
+  .carousel-wrapper .hero .container .content .shop-now {
+    font-size: 12px;
+  }
+  .carousel-wrapper .hero .container .content .shop-now:hover {
+    background-color: #232323;
+  }
+  .carousel-wrapper .overlay-2 {
+    background-image: url("../images/S2_2048x.png");
+  }
+  .carousel-wrapper .overlay-2 .container .content {
+    top: 55%;
+    left: 0;
+    transform: translateY(90%);
+    margin: 0 auto;
+    text-align: center;
+  }
+  .carousel-wrapper .overlay-2 .container .content .new-arrivals {
+    font-size: 22px;
+  }
+  .carousel-wrapper .overlay-2 .container .content .high-watches {
+    font-size: 60px;
+  }
+  .carousel-wrapper .prev {
+    width: 35px;
+    height: 35px;
+    left: 2%;
+    top: 40%;
+  }
+  .carousel-wrapper .prev i {
+    position: absolute;
+    right: 38%;
+    top: 18%;
+    font-size: 24px;
+  }
+  .carousel-wrapper .next {
+    width: 35px;
+    height: 35px;
+    right: 2%;
+    top: 40%;
+  }
+  .carousel-wrapper .next i {
+    position: absolute;
+    right: 30%;
+    top: 16%;
+    font-size: 24px;
+  }
+  .topbar .container .tag {
+    display: none;
+  }
+  .topbar .container .info {
+    display: flex;
+    margin: 0 auto;
+  }
+  .container .row {
+    width: 574px;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding-top: .4em;
+    padding-bottom: .4em;
+    position: relative;
+    top: 0px;
+  }
+  .container .row div {
+    padding-left: .2em;
+    padding-right: .2em;
+  }
+  section#trending-products .container h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: #232323;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+  section#trending-products .container .tabs {
+    text-align: center;
+    margin-bottom: 4em;
+  }
+  section#trending-products .container .tabs button {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #666666;
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+  section#trending-products .container .tabs button:focus, section#trending-products .container .tabs button:active,
+  section#trending-products .container .tabs button button::-moz-focus-inner {
+    background-color: #B99C87;
+    color: #fff;
+    border: 0;
+  }
+  section#trending-products .container .products .prod-prev {
+    background-color: #B99C87;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    left: 45%;
+    bottom: -15%;
+  }
+  section#trending-products .container .products .prod-prev i {
+    position: absolute;
+    right: 38%;
+    top: 19%;
+    font-size: 18px;
+  }
+  section#trending-products .container .products .prod-next {
+    background-color: #B99C87;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    bottom: -15%;
+    left: 53%;
+    margin: 0 auto;
+  }
+  section#trending-products .container .products .prod-next i {
+    position: absolute;
+    right: 30%;
+    top: 19%;
+    font-size: 18px;
+  }
+  /****************** DEALS DAY ******************/
+  section#deals-day .container .row .main-left-col {
+    position: relative;
+    margin-bottom: 2em;
+  }
+  section#deals-day .container .row .main-left-col img {
+    display: block;
+    margin: 0 auto;
+  }
+  section#deals-day .container .row .main-left-col .overlay {
+    content: "";
+    width: 434px;
+    height: 601px;
+    background-color: rgba(255, 255, 255, 0.14);
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    opacity: 0;
+    transform: scale(0.1);
+    transition: .4s;
+  }
+  section#deals-day .container .row .main-left-col:hover .overlay {
+    opacity: 1;
+    transform: rotate(180deg);
+    transition: .4s;
+  }
+  section#deals-day .container .row .main-right-col {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 2em;
+    height: 1090px;
+  }
+  section#deals-day .container .row .main-right-col h2.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick {
+    height: 450px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item {
+    display: flex !important;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item {
+    text-align: center;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item img,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item img {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .stars,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .stars {
+    position: relative;
+    transform: translate(-0.5%, -180%);
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .stars i,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .stars i {
+    font-size: 12px;
+    color: #CDCCCD;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item h5.prod-title,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item h5.prod-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 18px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item p.price,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item p.price {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item p.description,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item p.description {
+    font-size: 14px;
+    font-weight: 400;
+    color: #A4A4A4;
+    margin-bottom: 18px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item h5.offer-title,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item h5.offer-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 26px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin-bottom: 23px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .days,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .hours,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .mins,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .secs,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .days,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .hours,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .mins,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .secs {
+    border: 2px solid #c1a38b;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: .5em;
+    text-align: center;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .days span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .hours span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .mins span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .secs span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .days span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .hours span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .mins span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .secs span.main {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .days span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .hours span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .mins span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .secs span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .days span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .hours span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .mins span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .secs span.number {
+    font-weight: 500;
+    font-size: 20px;
+    display: block;
+    padding-top: .8em;
+    line-height: 1;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item button.add-cart,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item button.add-cart {
+    background-color: #B99C87;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 1px;
+    padding: .7em 1.5em;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item button.add-cart:hover,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item button.add-cart:hover {
+    background-color: #232323;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .main-deal-prev,
+  section#deals-day .container .row .main-right-col .deals-slick .main-deal-next {
+    background-color: #B99C87;
+    color: #fff;
+    border-radius: 50%;
+    display: none !important;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .main-deal-prev {
+    padding-right: .8em;
+    position: relative;
+    z-index: 1;
+    left: -30px;
+    transform: translateY(440%);
+    opacity: 0;
+    transition: all .4s ease-in;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .main-deal-next {
+    position: relative;
+    transform: translate(-650%, -1420%);
+    opacity: 0;
+    z-index: 1;
+    transition: all .4s ease-in;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick:hover .slick-arrow {
+    opacity: 1 !important;
+    transition: all .4s ease-in !important;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick:hover .mini-deal-prev,
+  section#deals-day .container .row .main-right-col .deals-slick:hover .mini-deal-next {
+    opacity: 1 !important;
+    transition: all .4s ease-in !important;
+  }
+  section#deals-day .container .row .main-right-col .mini-slider {
+    left: 13px;
+    width: 310px;
+    display: none;
+  }
+  section#deals-day .container .row .main-right-col .mini-slider img {
+    width: 118px !important;
+    height: 152px !important;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  section#deals-day .container .row .main-right-col .mini-slider .mini-deal-prev,
+  section#deals-day .container .row .main-right-col .mini-slider .mini-deal-next {
+    background-color: #B99C87;
+    color: #fff;
+    border-radius: 50%;
+  }
+  section#deals-day .container .row .main-right-col .mini-slider .mini-deal-prev {
+    padding: .25em .65em;
+    position: relative;
+    z-index: 1;
+    top: -60px;
+    left: -33px;
+    transform: translateY(440%);
+  }
+  section#deals-day .container .row .main-right-col .mini-slider .mini-deal-next {
+    padding: .25em .65em;
+    position: relative;
+    right: -275px;
+    top: -95px;
+  }
+  /****************** END DEALS DAY ******************/
+  /****************** TRENDY CLUB WATCHES ******************/
+  section#trendy-club {
+    background: url("../images/parallax.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 500px;
+  }
+  section#trendy-club .container {
+    text-align: center;
+    color: #fff;
+  }
+  section#trendy-club .container .row .content {
+    position: relative;
+    top: -50%;
+    transform: translateY(40%);
+  }
+  section#trendy-club .container .row .content h1 {
+    font-family: "Playfair Display";
+    font-size: 44px;
+    font-weight: 400;
+    margin-bottom: 13px;
+  }
+  section#trendy-club .container .row .content .shape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  section#trendy-club .container .row .content .shape .line {
+    content: "";
+    width: 100px;
+    margin-right: 1em;
+    height: 1px;
+    display: block;
+    background-color: #B99C87;
+  }
+  section#trendy-club .container .row .content .shape .line:last-of-type {
+    margin-left: 1em;
+  }
+  section#trendy-club .container .row .content .shape .icon i {
+    color: #B99C87;
+    font-size: 32px;
+  }
+  section#trendy-club .container .row .content p.text {
+    font-size: 14px;
+    font-weight: 300;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 28px;
+  }
+  section#trendy-club .container .row .content .shop-now {
+    background-color: #B99C87;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 1px;
+    font-size: 14px;
+    padding: .7em 1.5em;
+  }
+  section#trendy-club .container .row .content .shop-now:hover {
+    background-color: #232323;
+  }
+  /****************** END TRENDY CLUB ******************/
+}
+
+@media (min-width: 300px) and (max-width: 575px) {
+  /******** HERO ********/
+  .carousel-wrapper .hero {
+    background-image: url("../images/S1_2048x.png");
+  }
+  .carousel-wrapper .hero .container .content {
+    transform: translateY(40%);
+    margin: 0 auto;
+    text-align: center;
+  }
+  .carousel-wrapper .hero .container .content .big-sale {
+    font-size: 22px;
+  }
+  .carousel-wrapper .hero .container .content .club-watches {
+    font-size: 60px;
+  }
+  .carousel-wrapper .hero .container .content .description {
+    font-size: 14px;
+  }
+  .carousel-wrapper .hero .container .content .shop-now {
+    font-size: 12px;
+  }
+  .carousel-wrapper .hero .container .content .shop-now:hover {
+    background-color: #232323;
+  }
+  .carousel-wrapper .overlay-2 {
+    background-image: url("../images/S2_2048x.png");
+  }
+  .carousel-wrapper .overlay-2 .container .content {
+    top: 55%;
+    left: 0;
+    transform: translateY(40%);
+    margin: 0 auto;
+    text-align: center;
+  }
+  .carousel-wrapper .overlay-2 .container .content .new-arrivals {
+    font-size: 22px;
+  }
+  .carousel-wrapper .overlay-2 .container .content .high-watches {
+    font-size: 60px;
+  }
+  .carousel-wrapper .prev {
+    width: 35px;
+    height: 35px;
+    left: 2%;
+    top: 40%;
+  }
+  .carousel-wrapper .prev i {
+    position: absolute;
+    right: 38%;
+    top: 18%;
+    font-size: 24px;
+  }
+  .carousel-wrapper .next {
+    width: 35px;
+    height: 35px;
+    right: 2%;
+    top: 40%;
+  }
+  .carousel-wrapper .next i {
+    position: absolute;
+    right: 30%;
+    top: 16%;
+    font-size: 24px;
+  }
+  .topbar .container .tag {
+    display: none;
+  }
+  .topbar .container .info {
+    display: flex;
+    margin: 0 auto;
+  }
+  .container .row {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding-top: .4em;
+    padding-bottom: .4em;
+    position: relative;
+    top: 0px;
+  }
+  .container .row div {
+    padding-left: .5em;
+    padding-right: .5em;
+    margin-top: .7em;
+    margin-bottom: .7em;
+  }
+  section#trending-products .container h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: #232323;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+  section#trending-products .container .tabs {
+    text-align: center;
+    margin-bottom: 4em;
+  }
+  section#trending-products .container .tabs button {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #666666;
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+  section#trending-products .container .tabs button:focus, section#trending-products .container .tabs button:active,
+  section#trending-products .container .tabs button button::-moz-focus-inner {
+    background-color: #B99C87;
+    color: #fff;
+    border: 0;
+  }
+  section#trending-products .container .products {
+    /**** ON HOVER EFFECTS ****/
+  }
+  section#trending-products .container .products .prod-prev {
+    background-color: #B99C87;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+    left: 38%;
+    bottom: -15%;
+  }
+  section#trending-products .container .products .prod-prev i {
+    position: absolute;
+    right: 38%;
+    top: 19%;
+    font-size: 18px;
+  }
+  section#trending-products .container .products .prod-next {
+    background-color: #B99C87;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    bottom: -15%;
+    left: 52%;
+    margin: 0 auto;
+  }
+  section#trending-products .container .products .prod-next i {
+    position: absolute;
+    right: 30%;
+    top: 19%;
+    font-size: 18px;
+  }
+  section#trending-products .container .products .box-1 .extra-img,
+  section#trending-products .container .products .box-2 .extra-img,
+  section#trending-products .container .products .box-3 .extra-img,
+  section#trending-products .container .products .box-4 .extra-img,
+  section#trending-products .container .products .box-5 .extra-img,
+  section#trending-products .container .products .box-6 .extra-img {
+    position: absolute;
+    opacity: 0;
+    transition: all .6s;
+    width: 0px;
+    border: 0;
+  }
+  section#trending-products .container .products .box-1 .add-cart,
+  section#trending-products .container .products .box-2 .add-cart,
+  section#trending-products .container .products .box-3 .add-cart,
+  section#trending-products .container .products .box-4 .add-cart,
+  section#trending-products .container .products .box-5 .add-cart,
+  section#trending-products .container .products .box-6 .add-cart {
+    position: absolute;
+    bottom: -37px;
+    opacity: 0;
+    background-color: #B99C87;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 1px;
+    transition: .7s;
+    padding: 10px 18px;
+  }
+  section#trending-products .container .products .box-1 .eye,
+  section#trending-products .container .products .box-2 .eye,
+  section#trending-products .container .products .box-3 .eye,
+  section#trending-products .container .products .box-4 .eye,
+  section#trending-products .container .products .box-5 .eye,
+  section#trending-products .container .products .box-6 .eye {
+    position: absolute;
+    top: -35px;
+    right: 70px;
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .7s;
+  }
+  section#trending-products .container .products .box-1 .eye i,
+  section#trending-products .container .products .box-2 .eye i,
+  section#trending-products .container .products .box-3 .eye i,
+  section#trending-products .container .products .box-4 .eye i,
+  section#trending-products .container .products .box-5 .eye i,
+  section#trending-products .container .products .box-6 .eye i {
+    padding-top: .4em;
+    transition: .3s;
+  }
+  section#trending-products .container .products .box-1 .eye i:hover,
+  section#trending-products .container .products .box-2 .eye i:hover,
+  section#trending-products .container .products .box-3 .eye i:hover,
+  section#trending-products .container .products .box-4 .eye i:hover,
+  section#trending-products .container .products .box-5 .eye i:hover,
+  section#trending-products .container .products .box-6 .eye i:hover {
+    color: #B99C87;
+    cursor: pointer;
+    transition: .3s;
+  }
+  section#trending-products .container .products .box-1 .heart,
+  section#trending-products .container .products .box-2 .heart,
+  section#trending-products .container .products .box-3 .heart,
+  section#trending-products .container .products .box-4 .heart,
+  section#trending-products .container .products .box-5 .heart,
+  section#trending-products .container .products .box-6 .heart {
+    position: absolute;
+    top: -50px;
+    right: 70px;
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    border-radius: 50%;
+    transition: .7s;
+  }
+  section#trending-products .container .products .box-1 .heart i,
+  section#trending-products .container .products .box-2 .heart i,
+  section#trending-products .container .products .box-3 .heart i,
+  section#trending-products .container .products .box-4 .heart i,
+  section#trending-products .container .products .box-5 .heart i,
+  section#trending-products .container .products .box-6 .heart i {
+    padding-top: .4em;
+    transition: .3s;
+  }
+  section#trending-products .container .products .box-1 .heart i:hover,
+  section#trending-products .container .products .box-2 .heart i:hover,
+  section#trending-products .container .products .box-3 .heart i:hover,
+  section#trending-products .container .products .box-4 .heart i:hover,
+  section#trending-products .container .products .box-5 .heart i:hover,
+  section#trending-products .container .products .box-6 .heart i:hover {
+    color: #B99C87;
+    cursor: pointer;
+    transition: .3s;
+  }
+  section#trending-products .container .products .box-1:hover .extra-img,
+  section#trending-products .container .products .box-2:hover .extra-img,
+  section#trending-products .container .products .box-3:hover .extra-img,
+  section#trending-products .container .products .box-4:hover .extra-img,
+  section#trending-products .container .products .box-5:hover .extra-img,
+  section#trending-products .container .products .box-6:hover .extra-img {
+    opacity: 1;
+    transform: scale(1, 1);
+    transition: all .6s;
+    width: 255px;
+    margin-top: .05em;
+    padding-bottom: .12em;
+    border: 0;
+    transform-style: preserve-3d;
+  }
+  section#trending-products .container .products .box-1:hover .add-cart,
+  section#trending-products .container .products .box-2:hover .add-cart,
+  section#trending-products .container .products .box-3:hover .add-cart,
+  section#trending-products .container .products .box-4:hover .add-cart,
+  section#trending-products .container .products .box-5:hover .add-cart,
+  section#trending-products .container .products .box-6:hover .add-cart {
+    opacity: 1;
+    bottom: 10px;
+    transition: .7s;
+  }
+  section#trending-products .container .products .box-1:hover .eye,
+  section#trending-products .container .products .box-2:hover .eye,
+  section#trending-products .container .products .box-3:hover .eye,
+  section#trending-products .container .products .box-4:hover .eye,
+  section#trending-products .container .products .box-5:hover .eye,
+  section#trending-products .container .products .box-6:hover .eye {
+    position: absolute;
+    top: 5px;
+    right: 70px;
+    border: 1px solid rgba(193, 163, 139, 0.6);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    opacity: 1;
+    transition: .7s;
+  }
+  section#trending-products .container .products .box-1:hover .eye i,
+  section#trending-products .container .products .box-2:hover .eye i,
+  section#trending-products .container .products .box-3:hover .eye i,
+  section#trending-products .container .products .box-4:hover .eye i,
+  section#trending-products .container .products .box-5:hover .eye i,
+  section#trending-products .container .products .box-6:hover .eye i {
+    padding-top: .4em;
+  }
+  section#trending-products .container .products .box-1:hover .heart,
+  section#trending-products .container .products .box-2:hover .heart,
+  section#trending-products .container .products .box-3:hover .heart,
+  section#trending-products .container .products .box-4:hover .heart,
+  section#trending-products .container .products .box-5:hover .heart,
+  section#trending-products .container .products .box-6:hover .heart {
+    position: absolute;
+    top: 50px;
+    right: 70px;
+    border: 1px solid rgba(193, 163, 139, 0.6);
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    transition: .7s;
+    border-radius: 50%;
+  }
+  section#trending-products .container .products .box-1:hover .heart i,
+  section#trending-products .container .products .box-2:hover .heart i,
+  section#trending-products .container .products .box-3:hover .heart i,
+  section#trending-products .container .products .box-4:hover .heart i,
+  section#trending-products .container .products .box-5:hover .heart i,
+  section#trending-products .container .products .box-6:hover .heart i {
+    padding-top: .4em;
+  }
+  /****************** DEALS DAY ******************/
+  section#deals-day {
+    display: none !important;
+  }
+  section#deals-day .container .row .main-left-col {
+    position: relative;
+    margin-bottom: 2em;
+  }
+  section#deals-day .container .row .main-left-col img {
+    display: block;
+    margin: 0 auto;
+  }
+  section#deals-day .container .row .main-left-col .overlay {
+    content: "";
+    width: 434px;
+    height: 601px;
+    background-color: rgba(255, 255, 255, 0.14);
+    position: absolute;
+    top: 10px;
+    left: 255px;
+    opacity: 0;
+    transform: scale(0.1);
+    transition: .4s;
+  }
+  section#deals-day .container .row .main-left-col:hover .overlay {
+    opacity: 1;
+    transform: rotate(180deg);
+    transition: .4s;
+  }
+  section#deals-day .container .row .main-right-col {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 2em;
+    height: 1090px;
+  }
+  section#deals-day .container .row .main-right-col h2.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick {
+    height: 450px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item {
+    display: flex !important;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item {
+    text-align: center;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item img,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item img {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .stars,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .stars {
+    position: relative;
+    transform: translate(-0.5%, -180%);
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .stars i,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .stars i {
+    font-size: 12px;
+    color: #CDCCCD;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item h5.prod-title,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item h5.prod-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 18px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item p.price,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item p.price {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item p.description,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item p.description {
+    font-size: 14px;
+    font-weight: 400;
+    color: #A4A4A4;
+    margin-bottom: 18px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item h5.offer-title,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item h5.offer-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 26px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin-bottom: 23px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .days,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .hours,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .mins,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .secs,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .days,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .hours,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .mins,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .secs {
+    border: 2px solid #c1a38b;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: .5em;
+    text-align: center;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .days span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .hours span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .mins span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .secs span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .days span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .hours span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .mins span.main,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .secs span.main {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .days span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .hours span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .mins span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .first-item .timer .secs span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .days span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .hours span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .mins span.number,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item .timer .secs span.number {
+    font-weight: 500;
+    font-size: 20px;
+    display: block;
+    padding-top: .8em;
+    line-height: 1;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item button.add-cart,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item button.add-cart {
+    background-color: #B99C87;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 1px;
+    padding: .7em 1.5em;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .first-item button.add-cart:hover,
+  section#deals-day .container .row .main-right-col .deals-slick .second-item button.add-cart:hover {
+    background-color: #232323;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .main-deal-prev,
+  section#deals-day .container .row .main-right-col .deals-slick .main-deal-next {
+    background-color: #B99C87;
+    color: #fff;
+    border-radius: 50%;
+    display: none !important;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .main-deal-prev {
+    padding-right: .8em;
+    position: relative;
+    z-index: 1;
+    left: -30px;
+    transform: translateY(440%);
+    opacity: 0;
+    transition: all .4s ease-in;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick .main-deal-next {
+    position: relative;
+    transform: translate(-650%, -1420%);
+    opacity: 0;
+    z-index: 1;
+    transition: all .4s ease-in;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick:hover .slick-arrow {
+    opacity: 1 !important;
+    transition: all .4s ease-in !important;
+  }
+  section#deals-day .container .row .main-right-col .deals-slick:hover .mini-deal-prev,
+  section#deals-day .container .row .main-right-col .deals-slick:hover .mini-deal-next {
+    opacity: 1 !important;
+    transition: all .4s ease-in !important;
+  }
+  section#deals-day .container .row .main-right-col .mini-slider {
+    left: 13px;
+    width: 310px;
+    display: none;
+  }
+  section#deals-day .container .row .main-right-col .mini-slider img {
+    width: 118px !important;
+    height: 152px !important;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  section#deals-day .container .row .main-right-col .mini-slider .mini-deal-prev,
+  section#deals-day .container .row .main-right-col .mini-slider .mini-deal-next {
+    background-color: #B99C87;
+    color: #fff;
+    border-radius: 50%;
+  }
+  section#deals-day .container .row .main-right-col .mini-slider .mini-deal-prev {
+    padding: .25em .65em;
+    position: relative;
+    z-index: 1;
+    top: -60px;
+    left: -33px;
+    transform: translateY(440%);
+  }
+  section#deals-day .container .row .main-right-col .mini-slider .mini-deal-next {
+    padding: .25em .65em;
+    position: relative;
+    right: -275px;
+    top: -95px;
+  }
+  /****************** END DEALS DAY ******************/
+  /****************** TRENDY CLUB WATCHES ******************/
+  section#trendy-club {
+    background: url("../images/parallax.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 500px;
+  }
+  section#trendy-club .container {
+    text-align: center;
+    color: #fff;
+  }
+  section#trendy-club .container .row .content {
+    position: relative;
+    top: -50%;
+    transform: translateY(40%);
+  }
+  section#trendy-club .container .row .content h1 {
+    font-family: "Playfair Display";
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 13px;
+  }
+  section#trendy-club .container .row .content .shape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  section#trendy-club .container .row .content .shape .line {
+    content: "";
+    width: 100px;
+    margin-right: 1em;
+    height: 1px;
+    display: block;
+    background-color: #B99C87;
+  }
+  section#trendy-club .container .row .content .shape .line:last-of-type {
+    margin-left: 1em;
+  }
+  section#trendy-club .container .row .content .shape .icon i {
+    color: #B99C87;
+    font-size: 32px;
+  }
+  section#trendy-club .container .row .content p.text {
+    font-size: 14px;
+    font-weight: 300;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 28px;
+  }
+  section#trendy-club .container .row .content .shop-now {
+    background-color: #B99C87;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 1px;
+    font-size: 14px;
+    padding: .7em 1.5em;
+  }
+  section#trendy-club .container .row .content .shop-now:hover {
+    background-color: #232323;
+  }
+  /****************** END TRENDY CLUB ******************/
+}

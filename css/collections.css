@@ -1,0 +1,73 @@
+section#banner {
+  height: 175px;
+  background-image: url("../images/about-page/Breadcrumb-resize.png");
+  margin-bottom: 3em;
+}
+
+section#banner .container {
+  text-align: center;
+  align-content: center;
+  height: auto;
+}
+
+section#banner .container .wrapper {
+  transform: translateY(90%);
+  color: #fff;
+}
+
+section#banner .container .wrapper h1 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+section#main .collections .container .row div .wrapper {
+  position: relative;
+}
+
+section#main .collections .container .row div .wrapper:hover {
+  cursor: pointer;
+}
+
+section#main .collections .container .row div .wrapper:hover a.shop {
+  opacity: 1;
+  transition: .4s;
+  position: relative;
+  transform: translateY(-100%);
+}
+
+section#main .collections .container .row div .wrapper .content {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+section#main .collections .container .row div .wrapper p.title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #45494D;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: .6em;
+}
+
+section#main .collections .container .row div .wrapper span {
+  position: absolute;
+  top: 10px;
+  right: 13px;
+  background-color: #7FBC1E;
+  color: #F9F7F3;
+  padding: .5em;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+section#main .collections .container .row div .wrapper a.shop {
+  background-color: #B99C87;
+  color: #F9F7F3;
+  text-transform: uppercase;
+  border-radius: 1px;
+  padding: .6em 2.7em;
+  letter-spacing: .9px;
+  display: inline-block;
+  margin-left: 1.7em;
+  opacity: 0;
+  transition: .3s;
+}
